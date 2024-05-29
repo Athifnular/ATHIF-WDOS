@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Page</title>
+
+    <link rel="stylesheet" href="products.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Maven+Pro:wght@400..900&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body style="flex-wrap: wrap;">
+    <header>
+        <nav class="navigation-bar">
+            <div class="navdiv">
+              <ul class="bgul">
+                <a href="index.html" class="home-link">Home</a>
+                <div class="dropdown">
+                    <a href="products.html" class="home-link">Products</a>
+                    <div class="dropdown-content">
+                        <a href="dairy-products.html">Diary Products</a>
+                        <a href="vegetable.html">Vegetables</a>
+                        <a href="cosmetics.html">Cosmetics</a>
+                        <a href="#">Fruits</a>
+                        <a href="#">Meat & Sea Food</a>
+                    </div>
+                </div>
+                <a href="order.html" class="home-link">Order</a>
+                <a href="about.html" class="home-link">About</a>
+                <a href="loyalty.html" class="home-link">Loyalty</a>
+              </ul>
+            </div>
+            <div class="btn">
+                <a href="login.html" class="mainb">LOGIN</a>
+                <a href="signuppage.html" class="mainb">SIGNUP</a>
+            </div> 
+        </nav>
+    </header>
+
+    <main>
+        <h1>LOYALTY PROGRAMME</h1>
+        <form class="loyalty">
+            
+            <div class="sub-loyalty">
+                <div class="box">
+                    <label>Full Name </label>
+                    <input type="text" required>
+                </div>
+                <div class="box">
+                    <label>Email Address </label>
+                    <input type="email" required>
+                </div>
+                <div class="box">
+                    <label>Phone Number </label>
+                    <input type="tel" required>
+                </div>
+                <div class="box" >
+                    <label for="loyalty">Gender</label><br>
+                    <select id="loyalty" name="loyalty" required>
+                        <option value="" disabled selected>Select Your Gender</option>
+                        <option value="silver">Male</option>
+                        <option value="bronze">Female</option>
+                    </select>
+                    
+                </div>
+                <div class="box">
+                    <label>Date Of Birth </label>
+                    <input type="date">
+                </div>
+                <div class="box">
+                    <label>ZIP Code </label>
+                    <input type="number" minlength="5" maxlength="5">
+                </div>
+                <div class="box">
+                    <label>Average spend per visit</label>
+                    <input type="number" min="0" maxlength="6">
+                </div>
+            
+                <div class="box">
+                    <label for="loyalty">Pick a Loyalty Scheme</label><br>
+                    <select id="loyalty" name="loyalty" required>
+                        <option value="" disabled selected>Select Loyalty Scheme</option>
+                        <option value="gold">Gold Tier</option>
+                        <option value="silver">Silver Tier</option>
+                        <option value="bronze">Bronze Tier</option>
+                    </select>
+                </div>
+
+                <div class="box">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </div>
+        </form>
+
+        <h1 class="loyaltyh1">About Loyalty </h1>
+        <div class="loyalty-intro">
+           
+            <div class="loyalty-box" id="bronze">
+                <h2 id="bronzeh2">Bronze Tier</h2>
+                    <ul>
+                        <li>Benefits:<br>
+                            Customers in the Bronze tier typically receive basic benefits such as accumulating points for discounts on future purchases.
+                            They may also have access to a monthly newsletter subscription, which keeps them informed about <strong>special offers, new products, and upcoming events.</strong> <br><br>
+                        </li>
+                        <li>Requirements:<br>
+                            Bronze tier membership is often open to all customers who sign up for the loyalty program.
+                        </li>
+                    </ul>
+                        
+            </div>
+            <div class="loyalty-box" id="silver">
+                <h2 id="silverh2">Silver Loyalty</h2>
+                    <ul>
+                        <li>Benefits:<br>
+                            Customers in the Silver tier usually receive more benefits compared to the Bronze tier, including a higher discount rate on purchases.
+                            They may also receive additional perks such as a <strong>birthday discount voucher or access to exclusive sales events.</strong><br><br>
+                        </li>
+                        <li> Requirements:<br>
+                            Silver tier membership may require customers to reach a certain spending threshold or accumulate a specific number of loyalty points.
+                         </li>
+                    </ul>
+                      </div>
+            <div class="loyalty-box" id="gold">
+                <h2 id="goldh2">Gold Loyalty</h2>
+                    <ul>
+                        <li> Benefits:<br>
+                            Gold tier members enjoy the highest level of benefits, including the highest discount rate on purchases.
+                            They may receive exclusive benefits such as <strong> access to special events, personalized offers, and priority customer service.</strong><br><br>
+                        </li>
+                        <li>Requirements:<br>
+                            Gold tier membership usually requires customers to achieve a significant spending level or accumulate a large number of loyalty points within a specified period.
+                        </li>
+                    </ul>
+                    </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Contact Us</h3>
+        <p>
+            SPAR<br>
+            123 Main Street<br>
+            Colombo, Dehiwala, 10350<br>
+            Phone: +94 717627177<br>
+            <a href="mailto:info@supermarket.com">info@supermarket.com</a><br><br>
+            &copy; ALL RIGHTS RESERVED 
+        </p>
+    </footer>
+    
+</body>
+</html>

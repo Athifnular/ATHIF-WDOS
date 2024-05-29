@@ -1,0 +1,330 @@
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.urbanist{
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.comfortaa {
+font-family: "Comfortaa", sans-serif;
+font-style: normal;
+}
+.maven-pro{
+font-family: "Maven Pro", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+}
+
+
+/*CSS*/
+body{
+flex-wrap: wrap;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0px;
+
+}
+
+nav {
+  padding: 20px 20px;
+}
+.navigation-bar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  background-image: url(./images/home\ page/header.jpeg);
+  background-color: rgba(0, 0, 0, 0.755);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px; 
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+.navdiv {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.bgul{
+  background-color: rgba(0, 0, 0, 0.594);
+  padding:15px 5px;
+}
+
+
+.home-link{
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding:15px 10px;
+  font-family: urbanist;
+}
+.home-link:hover{
+  color: rgb(173, 173, 173);
+  padding:15px 10px;
+  background-color:transparent;
+  font-size: 1.1em;
+  transition-duration: 0.2s;
+}
+.home-link:active{
+  color:white;
+  font-size: 1em;
+  padding: 5px 8px;
+  transition-duration: 0.2s;
+}
+
+/*Drop down button and content*/
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #00000091;
+  min-width: 150px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 15px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1b8;
+  color: black;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/*login signup btn*/
+.btn{
+  margin: 40px;
+  font-family: "Urbanist";
+}
+
+.btn a{
+  padding: 5px;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border-radius: 15px;
+  width: 80px;
+  height: 25px;
+  border:2px solid rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: medium;
+  transition: 0.1s;
+}
+.btn a:hover{
+  background-color: white;
+  color: black;
+  font-size: 1.1em;
+}
+.btn a:active{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+}
+
+
+
+/*main content VEGETABLE PAGE*/
+.venues, .vegetables {
+  padding: 20px;
+  background-color: #666666;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.venues{
+
+  background-color: #666666;
+  margin: 20px;
+}
+.venues>h2{
+  margin: 0px 0px 10px 0px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+.venue-list{
+  color: #ffffff;
+  width: fit-content;
+  margin: auto;
+  text-align: left;
+}
+
+/*grid start*/
+
+.vegetables{
+  background-image: url(./images/Product/abstract.png);
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.28),-4px -4px 8px rgba(0, 0, 0, 0.28);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  padding: 0px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.432);
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.grid-item:hover{
+  background-color: #959595;
+}
+.grid-item>img{
+  width: 90%;
+  padding: 20px;
+  height: 350px;
+}
+.grid-name{
+  color: white;
+  background-color: #292929;
+  align-items: flex-end;
+  border-radius: 0px 0px 10px 10px;
+}
+.grid-name>p{
+  color: rgb(255, 255, 255);
+  font-family:sans-serif;
+  font-size: x-large;
+  padding: 0px;
+  text-align: center;
+  margin: 10px;
+}
+.grid-name>h3{
+  color: #f36b6b;
+  margin: 0px;
+  font-size: xx-large;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/*footer*/
+
+footer {
+  background-color:rgba(18, 18, 18, 0.915);
+  color: #fff;
+  padding: 10px;
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: -9px;
+}
+
+footer h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+footer address {
+  margin: 0;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+footer address a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer address a:hover {
+  text-decoration: underline;
+}
+footer p a{
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  padding: 3px;
+}
+footer p a:hover{
+  color: rgb(255, 255, 255);
+  background-color: #666666;
+}
+
+
+
+@media screen and (max-width: 1324px){
+  .grid-container{
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 1100px){
+  .grid-item{
+    height: 400px;
+}
+  .grid-container{
+     padding: 25px;
+  }
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 1024px) {
+  .navdiv {
+      margin-right: 10px;
+  }
+  .btn {
+      padding: 0px;
+  }
+  
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 868px) {
+  .navdiv {
+      margin-right: 0px;
+
+  }
+  .bgul {
+      margin-left: 0;
+      padding-left: 0;
+  }
+  .home-link {
+      margin-right: 10px;
+      font-size: 16px;
+  }
+  .btn {
+      padding-left: 0px;
+  }
+  .grid-container{
+    grid-template-columns: auto auto ;
+    padding: 0px 70px;
+    
+  }
+}
+
+@media screen and (max-width: 670px){
+  .btn{
+      display: none;
+  }
+  .grid-container{
+    grid-template-columns: auto;
+    padding: 0px 0px 0px 120px;
+    width: 300px;
+  }
+}

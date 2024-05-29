@@ -1,0 +1,341 @@
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.urbanist{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.comfortaa {
+  font-family: "Comfortaa", sans-serif;
+  font-style: normal;
+}
+.maven-pro{
+  font-family: "Maven Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/*CSS*/
+body{
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+nav {
+    padding: 20px 20px;
+}
+.navigation-bar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-image: url(./images/home\ page/header.jpeg);
+    background-color: rgba(0, 0, 0, 0.755);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px; 
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.navdiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.bgul{
+    background-color: rgba(0, 0, 0, 0.594);
+    padding:15px 5px;
+}
+
+
+.home-link{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding:15px 10px;
+    font-family: urbanist;
+}
+.home-link:hover{
+    color: rgb(173, 173, 173);
+    padding:15px 10px;
+    background-color:transparent;
+    font-size: 1.1em;
+    transition-duration: 0.2s;
+}
+.home-link:active{
+    color:white;
+    font-size: 1em;
+    padding: 5px 8px;
+    transition-duration: 0.2s;
+}
+
+/*Drop down button and content*/
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #00000091;
+    min-width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 15px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1b8;
+    color: black;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*login signup btn*/
+.btn{
+    margin: 40px;
+    font-family: "Urbanist";
+}
+
+.btn a{
+    padding: 5px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 15px;
+    width: 80px;
+    height: 25px;
+    border:2px solid rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: medium;
+    transition: 0.1s;
+}
+.btn a:hover{
+    background-color: white;
+    color: black;
+    font-size: 1.1em;
+}
+.btn a:active{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+
+/*main*/
+
+.main{
+    background-color: #00000080;
+    background-blend-mode: overlay;
+    background-image: url(./images/Screenshot\ 2024-04-30\ at\ 17.42.09.png);
+    border-radius: 10px;
+    width: 95%;
+    margin: auto;
+}
+.main>h1{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 15px;
+}
+
+.product {
+    width: 230px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #ffffff00;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #00000095;
+    box-shadow: 5px 5px 10px rgba(187, 187, 187, 0.6),-5px -5px 10px rgba(199, 199, 199, 0.456);
+}
+.product:hover{
+    background-color: rgba(0, 0, 0, 0.863);
+    box-shadow: 5px 5px 15px white,-5px -5px 15px white;
+    transition: 0.5s;
+    width: 240px;
+    height:380px;
+}
+.product>h2,.product>p{
+    color: white;
+    font-family: "Urbanist";
+}
+.product>input{
+    border: none;
+    padding: 4px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px white;
+}
+.product>.add-to-cart{
+    width: 70%;
+    margin-top: 12px ;
+    margin-bottom: 5px;
+}
+
+/*cart*/
+
+.cart-summary {
+    color: white;
+    width: auto;
+    margin:auto;
+    padding: 0px;
+    text-align: center;
+}
+.cart-summary>h2,.customer-info>h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cart-summary>button,.customer_info>button,.add-to-cart{
+    cursor: pointer;
+    width: auto;
+    padding: 4px;
+    margin: auto;
+    border: none;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px white,-1px -1px 5px black;
+}
+
+/*customer info*/
+.customer-info {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    
+}
+.customer_info{
+    display: grid;
+    width: 20%;
+    margin: auto;
+    justify-content: center;
+}
+.customer_info>input{
+    padding: 7px;
+    border: none;
+    margin: 6px;
+    border-radius: 5px;
+}
+.customer_info>input:hover{
+    background-color: #878787;
+    color: white;
+}
+
+.customer_info>button{
+    width: 98%;
+    padding: 6px;
+}
+.customer_info>button:HOVER,.cart-summary>button:hover,.add-to-cart:hover{
+    background-color: #ff6464;
+    color: white;
+}
+
+/*footer*/
+
+footer {
+    background-color:rgba(18, 18, 18, 0.915);
+    color: #fff;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: -9px;
+}
+
+footer h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+footer address {
+    margin: 0;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+footer address a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer address a:hover {
+    text-decoration: underline;
+}
+footer p a{
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    padding: 3px;
+}
+footer p a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #666666;
+}
+
+
+
+
+
+
+/* for tablets */
+
+@media screen and (max-width: 1024px) {
+    .navdiv {
+        margin-right: 10px;
+    }
+    .btn {
+        padding: 0px;
+    }
+}
+
+/* for smaller screens */
+@media screen and (max-width: 768px) {
+    .navdiv {
+        margin-right: 0px;
+
+    }
+    .btn {
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 670px){
+    .btn{
+        display: none;
+    }
+   .bgul{
+     padding: 5px;
+     
+   }
+   .home-link{
+      font-size: 11px;
+      padding: 4px;
+   }
+   
+}
